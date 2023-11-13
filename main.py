@@ -1,4 +1,5 @@
 from flask import Flask,render_template,Response
+from camera import VideoCamera
 
 
 app=Flask(__name__)
@@ -6,4 +7,4 @@ app=Flask(__name__)
 def index():
     #rendering webpage
     return render_template('index.html')
-def gen():
+def gen(camera):
